@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Flower Shop - About</title>
+</head>
+
+<body>
+    <section id="nav">
+        <nav>
+            <div class="logo">Florist</div>
+            <div class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            </div>
+        </nav>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="info">
+                <h3>Address</h3>
+                <p>13 Fifth Avenue, New York 101660</p>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>contact@info.com</p>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>+91 987 654 321</p>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <p>Address: 13 Fifth Avenue, New York 101660</p>
+            </div>
+            <div class="contact-item">
+                <p>Email: <a href="mailto:contact@info.com">contact@info.com</a></p>
+            </div>
+            <div class="contact-item">
+                <p>Phone: +91 987 654 321</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+
+        </div>
+    </footer>
+    <script>
+       document.getElementById('hamburger').addEventListener('click', function () {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+
+</body>
+
+</html>
